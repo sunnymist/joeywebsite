@@ -5,39 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joey</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    body { 
+      margin: 0; 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      background: #F2F2F7;
+    }
     /* Hero */
-    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center;
-            padding: 100px 20px; background: #661EAB; text-align: center; color: white; }
+    .hero { 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+      padding: 100px 20px; 
+      background: #661EAB; 
+      text-align: center; 
+      color: white; 
+    }
     .hero h1 { margin-bottom: 10px; font-size: 2.5rem; }
     .hero p { margin-bottom: 20px; color: white; }
     .hero .buttons img { height: 50px; margin: 0 10px; cursor: pointer; }
     /* Features */
     .features {
       display: flex;
-      justify-content: center;
+      justify-content: center;   /* centers horizontally */
+      align-items: center;       /* centers vertically if taller than screen */
       gap: 40px;
       padding: 50px 20px;
       max-width: 1000px;
-      margin: auto;
+      margin: 0 auto;            /* centers the whole block */
       flex-wrap: wrap;
-    }
-    .feature {
-      flex: 1 1 300px; 
       text-align: center;
     }
-    .feature img {
-      max-width: 100%;              /* image never exceeds its container */
-      height: auto;                 /* maintains aspect ratio */
-      display: block;
+    .feature {
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
+      justify-content: center;   /* centers mockup inside card */
+      align-items: center;
     }
-    .feature h3 { margin-top: 0; }
     .feature .mockup {
-      width: 250px;          /* resize screenshot */
-      border-radius: 40px;   /* rounded corners like an iPhone */
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* floating effect */
-      border: 12px solid #000; /* fake phone frame */
-    }
+  display: block;
+  max-width: 250px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+    .feature h3 { margin-top: 0; }
+
     /* Footer */
     footer { background: #661EAB; color: #fff; padding: 20px; text-align: center; }
     footer a { color: #fff; margin: 0 10px; text-decoration: none; }
