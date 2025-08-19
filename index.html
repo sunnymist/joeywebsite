@@ -23,7 +23,13 @@
       flex-wrap: wrap;
     }
     .feature {
+      flex: 1 1 300px; 
       text-align: center;
+    }
+    .feature img {
+      max-width: 100%;              /* image never exceeds its container */
+      height: auto;                 /* maintains aspect ratio */
+      display: block;
     }
     .feature h3 { margin-top: 0; }
     .feature .mockup {
