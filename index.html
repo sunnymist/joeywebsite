@@ -17,7 +17,7 @@
       flex-direction: column; 
       align-items: center; 
       justify-content: center;
-      padding: 100px 20px; 
+      padding: 50px 20px; 
       background: #661EAB; 
       text-align: center; 
       color: white; 
@@ -45,14 +45,25 @@
       align-items: center;
     }
     .feature .mockup {
-  display: block;
-  max-width: 250px;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  background: transparent;
-}
+      display: block;
+      max-width: 250px;
+      height: auto;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      background: transparent;
+    }
+    .download {
+      display: flex;
+      justify-content: center;  /* centers button horizontally */
+      padding: 40px 20px;       /* spacing above/below button */
+      background: #F2F2F7;      /* matches page background */
+    }
+
+    .download img {
+      height: 60px;             /* slightly larger than before for emphasis */
+      cursor: pointer;
+    }
     .feature h3 { margin-top: 0; }
 
     /* Footer */
@@ -65,18 +76,19 @@
   <section class="hero">
     <h1>Joey</h1>
     <p>Find things for your family to do in your area</p>
-    <div class="buttons">
-      <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="Download on the App Store" />
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/SearchLocation.png" alt="Search for activities in a given area" />
+    </div>
+    <div class="feature">
+      <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/ActivityDetails.png" alt="View details for the activity" />
     </div>
   </section>
 
-<section class="features">
-  <div class="feature">
-    <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/SearchLocation.png" alt="Search for activities in a given area" />
-  </div>
-  <div class="feature">
-    <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/ActivityDetails.png" alt="View details for the activity" />
-  </div>
+<section class="download">
+  <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="Download on the App Store" />
 </section>
 
   <footer>
