@@ -13,10 +13,25 @@
     .hero p { margin-bottom: 20px; color: white; }
     .hero .buttons img { height: 50px; margin: 0 10px; cursor: pointer; }
     /* Features */
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                 gap: 20px; padding: 50px 20px; max-width: 900px; margin: auto; }
-    .feature { background: #fff; padding: 20px; border-radius: 8px; text-align: center; }
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    .feature {
+      text-align: center;
+    }
     .feature h3 { margin-top: 0; }
+    .feature .mockup {
+      width: 250px;          /* resize screenshot */
+      border-radius: 40px;   /* rounded corners like an iPhone */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* floating effect */
+      border: 12px solid #000; /* fake phone frame */
+    }
     /* Footer */
     footer { background: #661EAB; color: #fff; padding: 20px; text-align: center; }
     footer a { color: #fff; margin: 0 10px; text-decoration: none; }
@@ -32,14 +47,14 @@
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/SearchLocation.png" alt="Search for activities in a given area" />
-    </div>
-    <div class="feature">
-      <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/ActivityDetails.png" alt="View details for the activity" />
-    </div>
-  </section>
+<section class="features">
+  <div class="feature">
+    <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="Search for activities in a given area" />
+  </div>
+  <div class="feature">
+    <img class="mockup" src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="View details for the activity" />
+  </div>
+</section>
 
   <footer>
     <p>&copy; 2025 Joey App. All rights reserved.</p>
