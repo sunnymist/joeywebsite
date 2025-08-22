@@ -13,6 +13,31 @@
       color: #333;
     }
 
+    header {
+      background-color: #661EAB;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    header .banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
     /* Header (purple banner like index.html) */
     .hero {
       display: flex;
@@ -51,9 +76,14 @@
 <body>
 
   <!-- Purple banner header -->
-  <section class="hero">
-    <h1>Terms and Conditions</h1>
-  </section>
+  <header>
+    <div class="banner">
+      <h1>Joey</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Privacy Policy content -->
   <div class="content">
