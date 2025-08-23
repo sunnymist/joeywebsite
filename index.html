@@ -11,29 +11,66 @@
       line-height: 1.6; 
       background: #F2F2F7;
     }
+
     /* Hero */
     .hero { 
       display: flex; 
-      flex-direction: column; 
       align-items: center; 
       justify-content: center;
-      padding: 50px 20px; 
+      padding: 60px 20px; 
       background: #661EAB; 
-      text-align: center; 
       color: white; 
+      text-align: left;
     }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 900px;
+    }
+
+    .hero .logo {
+      max-width: 120px;
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .brand-text p {
+      margin: 5px 0 0;
+      color: white;
+    }
+
+    /* Mobile stacking */
+    @media (max-width: 600px) {
+      .hero {
+        text-align: center;
+      }
+      .brand {
+        flex-direction: column;
+      }
+      .brand-text h1 {
+        font-size: 2rem;
+      }
+    }
+
     .hero h1 { margin-bottom: 10px; font-size: 2.5rem; }
     .hero p { margin-bottom: 20px; color: white; }
     .hero .buttons img { height: 50px; margin: 0 10px; cursor: pointer; }
+
     /* Features */
     .features {
       display: flex;
-      justify-content: center;   /* centers horizontally */
-      align-items: center;       /* centers vertically if taller than screen */
+      justify-content: center;
+      align-items: center;
       gap: 40px;
       padding: 50px 20px;
       max-width: 1000px;
-      margin: 0 auto;            /* centers the whole block */
+      margin: 0 auto;
       flex-wrap: wrap;
       text-align: center;
     }
@@ -41,7 +78,7 @@
       background: transparent;
       padding: 0;
       box-shadow: none;
-      justify-content: center;   /* centers mockup inside card */
+      justify-content: center;
       align-items: center;
     }
     .feature .mockup {
@@ -53,15 +90,16 @@
       box-shadow: none;
       background: transparent;
     }
+
+    /* Download */
     .download {
       display: flex;
-      justify-content: center;  /* centers button horizontally */
-      padding: 40px 20px;       /* spacing above/below button */
-      background: #F2F2F7;      /* matches page background */
+      justify-content: center;
+      padding: 40px 20px;
+      background: #F2F2F7;
     }
-
     .download img {
-      height: 60px;             /* slightly larger than before for emphasis */
+      height: 60px;
       cursor: pointer;
     }
     .feature h3 { margin-top: 0; }
@@ -74,9 +112,15 @@
 <body>
 
   <section class="hero">
-    <h1>Joey</h1>
-    <p>Find things for your family to do in your area</p>
+    <div class="brand">
+      <img src="Assets/JoeyAppIconWebsite.png" alt="Joey Logo" class="logo">
+      <div class="brand-text">
+        <h1>Joey</h1>
+        <p>Your pocket guide to finding your next family adventure nearby</p>
+      </div>
+    </div>
   </section>
+
 
   <section class="features">
     <div class="feature">
@@ -87,9 +131,9 @@
     </div>
   </section>
 
-<section class="download">
-  <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="Download on the App Store" />
-</section>
+  <section class="download">
+    <img src="https://raw.githubusercontent.com/sunnymist/joeywebsite/main/Assets/DownloadOnAppStoreIcon.svg" alt="Download on the App Store" />
+  </section>
 
   <footer>
     <p>&copy; 2025 Joey App. All rights reserved.</p>
